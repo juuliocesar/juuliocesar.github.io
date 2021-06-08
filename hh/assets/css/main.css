@@ -15,7 +15,9 @@ justify-content: center;
     text-align: center;
 }
 a{
-    text-decoration: none;
+    font-weight: bold;
+    color:cadetblue;
+    font-size: 1em;
 }
 img{
     max-width: 100%;
