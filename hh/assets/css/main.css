@@ -1,0 +1,152 @@
+html{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.container{
+background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 350px;
+    width: 400px;
+}
+
+a:hover{
+    opacity: 0.2;
+}
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+.address{
+    font-weight: bold;
+    color:cornflowerblue;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.content{
+    /*Dimensiones del elemento*/
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    /*Overflow es la propiedad que define como se comporta el contenido que se sale de las
+    dimensiones del elemento */
+    /* overflow-y: scroll; */
+    overflow: scroll;
+    
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: rgb(26, 36, 32);
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #c0c0f3;
+}
+.fas{
+    color: yellow;
+}
+
+.title-item{
+    border-bottom: solid;
+    border-width: 2px;
+    border-color:#1c1c73;
+    padding-bottom: 1em;
+}
+
+.position{
+    background-color: #c0c0f3;
+    padding: 0.5em;
+    border-radius: 3px;
+}
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color:cornflowerblue
+
+}
+th{
+    display: none;
+}
+
+/* Sólo se aplica a los que tengan al menos 550px */
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
+
+/* Pantallas que tengan al menos 900px */
+@media (min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+}
+
+img{
+    max-width: 100%;
+}
